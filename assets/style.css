@@ -56,7 +56,7 @@ li a:hover {
 }
 
 .hero-image {
-  /* height: 1700px; */
+  height: 800px;
   background-image: url("djGear.jpg");
   background-size: cover;
   position: relative;
