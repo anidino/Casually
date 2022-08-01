@@ -247,24 +247,27 @@ iframe {
     aspect-ratio: 1;
     margin-left: 4px;
     margin-right: 4px;
+    background-attachment: cover;
   }
 
-  .bottom {
+  /* .bottom {
     height: 1000px;
-  }
+  } */
 
   .paragraph {
     height: 500px;
   }
 
   .scroll {
-    display: block;
+    position: relative;
+    display: flex;
     border: 0px solid red;
     padding: 15px;
     margin-top: 15px;
     width: 100%;
     height: 400px;
     overflow-y: scroll;
+    background-attachment: scroll;
   }
 }
 
@@ -274,9 +277,10 @@ iframe {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-image {
     margin-top: 20px;
+    /* height: 900px; */
   }
   .bottom {
-    /* height: 900px; */
+    height: 900px;
   }
 
   .Info {
@@ -286,11 +290,18 @@ iframe {
 
   .paragraph {
     margin-top: 13px;
+    /* height: 890px; */
   }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .hero-image {
+    /* height: fit-content; */
+  }
+  /* .paragraph {
+    height: 500px;
+  } */
 }
 
 /* Landscape */
@@ -301,7 +312,28 @@ iframe {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* .paragraph {
-    /* height: 900px;
-    margin-top: 300px; */
+  .hero-image {
+    height: 800px;
+  }
+
+  .paragraph {
+    height: 9000px;
+    margin-top: 300px;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .hero-image {
+    height: 9000px;
+    width: 100%;
+  }
+
+  .slideshow-container {
+    margin-top: 300px;
+  }
+
+  .paragraph p {
+    height: 800px;
+  }
 }
