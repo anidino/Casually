@@ -2,7 +2,7 @@ link {
 }
 
 body {
-  height: cover;
+  height: 100%;
   width: 100%;
   background-color: white;
 }
@@ -94,7 +94,7 @@ iframe {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: sticky;
+  position: relative;
   margin: auto;
 }
 
@@ -278,9 +278,14 @@ iframe {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-image {
-    margin-top: 50px;
+    margin-top: 18px;
     margin-bottom: 0px;
-    height: 1000px;
+    height: 1500px;
+  }
+
+  .slideshow-container {
+    height: 550px;
+    border-bottom: 10px solid white;
   }
   .bottom {
     height: 900px;
@@ -291,9 +296,9 @@ iframe {
   /* margin-bottom: 1000px; */
 
   .paragraph {
-    margin-top: 200px;
+    margin-top: 20px;
     margin-bottom: 0px;
-    padding-top: 20px;
+    padding-top: 10px;
     height: 1000px;
   }
 }
@@ -301,11 +306,13 @@ iframe {
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .hero-image {
-    height: fit-content;
+    height: 1250px;
   }
   .paragraph {
-    height: 400px;
-    margin-top: 100px;
+    height: 450px;
+    margin-top: 85px;
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
     margin-bottom: 0;
   }
 }
