@@ -4,7 +4,7 @@ link {
 body {
   height: cover;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 header {
@@ -19,13 +19,13 @@ header h1 {
   font-family: "Rubik Moonrocks", cursive;
   font-size: 100px;
   color: rgb(255, 255, 255);
-  background-color: rgb(202, 5, 143);
+  background-color: rgb(0, 0, 0);
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 nav {
-  background-color: rgb(202, 5, 143);
+  background-color: rgb(0, 0, 0);
   margin-bottom: 10px;
   text-decoration: none;
   list-style-type: none;
@@ -57,7 +57,7 @@ a {
 
 li a:hover {
   background-color: white;
-  color: rgb(64, 10, 151);
+  color: black;
   font-weight: bold;
 }
 
@@ -185,8 +185,8 @@ iframe {
   /* display: flex; */
   /* flex-direction: column; */
   text-align: center;
-  border: 10px solid #c9c914;
-  background-color: rgb(18, 0, 66);
+  border: 10px solid white;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 14px;
